@@ -70,15 +70,11 @@
         <div class="hero-visual">
           <div class="glass-card profile-card">
             <div class="profile-frame">
-              <img src="assets/profile.jpeg" alt="Professional portrait of Shibinayaa S" onerror="this.style.display='none'; this.parentElement.classList.add('placeholder');" />
+              <img src="assets/profile.jpeg" alt="Professional portrait of Shibinayaa S" onload="this.parentElement.classList.add('loaded')" onerror="this.style.display='none'; this.parentElement.classList.remove('loaded'); this.parentElement.classList.add('placeholder');" />
               <div class="profile-placeholder">
                 <span>Photo</span>
                 <small>Insert profile image</small>
               </div>
-            </div>
-            <div class="profile-meta">
-              <p class="profile-role">Embedded Systems Engineer</p>
-              <p class="profile-location">Tamil Nadu, India</p>
             </div>
           </div>
 
@@ -402,7 +398,7 @@
         <article class="glass-card publication-card reveal-item">
           <div class="publication-icon">⌁</div>
           <div>
-            <h3>Microcontroller-Based Crop Defense Mechanism with Electrostatic Field and UV-C Sterilization</h3>
+            <h3>ICSCSS-1104: Design and Analysis of a 30 GHz Dielectric Resonator Antenna for 5G Applications</h3>
             <p><strong>Conference:</strong> ICSCSS 2026</p>
             <p><strong>Status:</strong> Accepted for Presentation</p>
             <div class="project-actions">
@@ -459,8 +455,7 @@
 
   <footer class="site-footer">
     <div class="container footer-inner">
-      <p>© 2026 Shibinayaa S</p>
-      <p>Built with HTML, CSS, JavaScript and GitHub Pages.</p>
+      <p>© 2026 Shibinayaa S. All rights reserved.</p>
     </div>
   </footer>
 

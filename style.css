@@ -363,6 +363,10 @@ textarea {
   background: linear-gradient(180deg, rgba(6, 10, 20, 0.1), rgba(6, 10, 20, 0.58));
 }
 
+.profile-frame.loaded .profile-placeholder {
+  display: none;
+}
+
 .profile-placeholder span {
   display: block;
   font-size: 2rem;
@@ -845,10 +849,20 @@ textarea {
 
 .footer-inner {
   display: flex;
+  align-items: center;
   justify-content: space-between;
   gap: 1rem;
   color: var(--muted);
   flex-wrap: wrap;
+  padding: 1rem 1.25rem;
+  border-radius: 1.25rem;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(148, 163, 184, 0.12);
+  backdrop-filter: blur(20px);
+}
+
+.footer-inner p {
+  margin: 0;
 }
 
 .modal {

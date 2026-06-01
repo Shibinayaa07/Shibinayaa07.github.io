@@ -2,145 +2,471 @@
 <html lang="en">
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Shibinayaa S — Portfolio</title>
-  <link rel="stylesheet" href="style.css">
-  <meta name="description" content="Shibinayaa S — ECE student, Embedded Systems & Full-Stack Developer" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#07111f" />
+  <meta name="description" content="Shibinayaa S is an Electronics and Communication Engineering student focused on embedded systems, IoT, full stack development, and research." />
+  <meta name="keywords" content="Shibinayaa S, portfolio, embedded systems, IoT developer, full stack developer, ECE student, Tamil Nadu" />
+  <meta name="author" content="Shibinayaa S" />
+  <meta property="og:title" content="Shibinayaa S | Embedded Systems Engineer & Full Stack Developer" />
+  <meta property="og:description" content="Modern recruiter-focused portfolio for an ECE student with embedded systems, IoT, full stack, research, and campus placement highlights." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://shibinayaa07.github.io/" />
+  <title>Shibinayaa S | Embedded Systems Engineer & Full Stack Developer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+  <div class="background-orbs" aria-hidden="true"></div>
+  <div id="particles" class="particles" aria-hidden="true"></div>
+
+  <a class="skip-link" href="#main-content">Skip to content</a>
+
   <header class="site-header">
     <div class="container header-inner">
-      <a class="brand" href="#">Shibinayaa S</a>
-      <nav class="nav">
+      <a class="brand" href="#hero" aria-label="Shibinayaa S home">Shibinayaa S</a>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="primary-nav">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <nav class="nav" id="primary-nav">
         <a href="#about">About</a>
-        <a href="#projects">Projects</a>
         <a href="#skills">Skills</a>
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
+        <a href="#education">Education</a>
+        <a href="#research">Research</a>
         <a href="#contact">Contact</a>
-        <button id="theme-toggle" aria-label="Toggle dark mode">🌙</button>
+        <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Toggle theme"></button>
       </nav>
     </div>
   </header>
 
-  <main>
-    <section id="hero" class="hero">
-      <div class="container hero-inner">
-        <div class="hero-content">
-          <h1>Hi — I’m <span class="accent">Shibinayaa S</span></h1>
-          <p class="lead">ECE Student · Embedded Systems & Full‑Stack Developer</p>
-          <p>I design connected systems that bridge hardware and software — IoT prototypes, secure backends, and responsive web apps.</p>
-          <div class="ctas">
-            <a class="btn" href="assets/resume.pdf" download>Download Resume</a>
-            <a class="btn ghost" href="#projects">View Projects</a>
+  <main id="main-content">
+    <section id="hero" class="hero section reveal">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow">Electronics and Communication Engineering Student · Tamil Nadu, India</p>
+          <h1>Hi, I'm <span class="accent">Shibinayaa S</span></h1>
+          <p class="hero-subtitle">Embedded Systems Engineer | IoT Developer | Full Stack Developer</p>
+          <p class="hero-description">I build practical, polished digital systems that connect hardware and software. My work spans embedded devices, IoT platforms, database-driven web apps, and research-focused prototypes designed for real-world deployment.</p>
+          <div class="typing-line" aria-live="polite">
+            <span id="typing-text"></span><span class="typing-caret" aria-hidden="true"></span>
+          </div>
+          <div class="hero-actions">
+            <a class="btn primary" href="assets/resume.pdf" download>Download Resume</a>
+            <a class="btn secondary" href="#projects">View Projects</a>
             <a class="btn ghost" href="#contact">Contact Me</a>
           </div>
+          <div class="hero-socials" aria-label="Social links">
+            <a href="mailto:shibinayaas@gmail.com" aria-label="Email">Email</a>
+            <a href="https://linkedin.com/in/shibinayaa-s-b31090290" target="_blank" rel="noreferrer">LinkedIn</a>
+            <a href="https://github.com/Shibinayaa07" target="_blank" rel="noreferrer">GitHub</a>
+          </div>
         </div>
-        <div class="hero-photo">
-          <img src="assets/profile.jpeg" alt="Profile photo of Shibinayaa">
+
+        <div class="hero-visual">
+          <div class="glass-card profile-card">
+            <div class="profile-frame">
+              <img src="assets/profile.jpeg" alt="Professional portrait of Shibinayaa S" onerror="this.style.display='none'; this.parentElement.classList.add('placeholder');" />
+              <div class="profile-placeholder">
+                <span>Photo</span>
+                <small>Insert profile image</small>
+              </div>
+            </div>
+            <div class="profile-meta">
+              <p class="profile-role">Embedded Systems Engineer</p>
+              <p class="profile-location">Tamil Nadu, India</p>
+            </div>
+          </div>
+
+          <div class="hero-stats">
+            <article class="glass-card stat-card">
+              <strong>6+</strong>
+              <span>Featured Projects</span>
+            </article>
+            <article class="glass-card stat-card">
+              <strong>2</strong>
+              <span>Years of Focused Development</span>
+            </article>
+            <article class="glass-card stat-card">
+              <strong>1</strong>
+              <span>Research Publication Accepted</span>
+            </article>
+          </div>
         </div>
       </div>
     </section>
 
-    <section id="about" class="section">
-      <div class="container">
-        <h2>About</h2>
-        <p>Electronics & Communication Engineering student with experience in embedded systems, IoT, and full‑stack development. I build end‑to‑end solutions using microcontrollers (Arduino, ESP32), sensor networks, and backend systems (PHP/MySQL, Python). I enjoy turning research ideas into working prototypes and production features.</p>
+    <section id="about" class="section reveal">
+      <div class="container section-heading">
+        <p class="section-label">About Me</p>
+        <h2>Recruiter-ready profile built for software, embedded, IoT, and research roles.</h2>
       </div>
-    </section>
-
-    <section id="skills" class="section">
-      <div class="container">
-        <h2>Skills</h2>
-        <div class="skills-grid">
-          <div class="skill-card">
-            <h3>Programming</h3>
-            <ul><li>Java</li><li>Python</li><li>PHP</li><li>JavaScript</li><li>C</li><li>SQL</li></ul>
-          </div>
-          <div class="skill-card">
-            <h3>Web</h3>
-            <ul><li>HTML5</li><li>CSS3</li><li>Bootstrap</li><li>Responsive Design</li><li>MySQL</li></ul>
-          </div>
-          <div class="skill-card">
-            <h3>Embedded & IoT</h3>
-            <ul><li>Arduino</li><li>ESP32 / ESP8266</li><li>RFID</li><li>Blynk</li><li>GPS Modules</li></ul>
-          </div>
-          <div class="skill-card">
-            <h3>Tools</h3>
-            <ul><li>Git</li><li>VS Code</li><li>XAMPP</li><li>phpMyAdmin</li></ul>
-          </div>
+      <div class="container about-grid">
+        <div class="glass-card about-card">
+          <p>Electronics and Communication Engineering student with experience in Embedded Systems, IoT, Full Stack Web Development, Database Management, and Software Engineering. Passionate about developing practical solutions that combine hardware and software to solve real-world problems. Skilled in Java, Python, PHP, JavaScript, MySQL, Arduino, ESP32, RFID, and responsive web technologies. Strong problem-solving abilities with hands-on experience in software and embedded system projects.</p>
+        </div>
+        <div class="glass-card highlight-card">
+          <h3>Professional Focus</h3>
+          <ul class="feature-list">
+            <li>Embedded firmware and device integration</li>
+            <li>Responsive, secure full stack web applications</li>
+            <li>Research-oriented problem solving and prototyping</li>
+            <li>Placement-ready communication and project presentation</li>
+          </ul>
         </div>
       </div>
     </section>
 
-    <section id="projects" class="section">
+    <section id="skills" class="section reveal">
+      <div class="container section-heading">
+        <p class="section-label">Skills</p>
+        <h2>Technical depth across programming, web, embedded, and tools.</h2>
+      </div>
+      <div class="container skills-grid">
+        <article class="glass-card skill-card reveal-item">
+          <div class="skill-icon">01</div>
+          <h3>Programming Languages</h3>
+          <ul class="skill-tags">
+            <li>Java</li><li>Python</li><li>PHP</li><li>JavaScript</li><li>SQL</li><li>C</li>
+          </ul>
+          <div class="progress-list">
+            <div class="progress-row"><span>Logic & Coding</span><span>90%</span></div>
+            <div class="progress-bar"><span style="width:90%"></span></div>
+          </div>
+        </article>
+        <article class="glass-card skill-card reveal-item">
+          <div class="skill-icon">02</div>
+          <h3>Web Development</h3>
+          <ul class="skill-tags">
+            <li>HTML5</li><li>CSS3</li><li>Bootstrap</li><li>Responsive Design</li><li>Authentication Systems</li><li>CRUD Operations</li>
+          </ul>
+          <div class="progress-list">
+            <div class="progress-row"><span>Frontend & Backend</span><span>88%</span></div>
+            <div class="progress-bar"><span style="width:88%"></span></div>
+          </div>
+        </article>
+        <article class="glass-card skill-card reveal-item">
+          <div class="skill-icon">03</div>
+          <h3>Embedded Systems & IoT</h3>
+          <ul class="skill-tags">
+            <li>Arduino</li><li>ESP32</li><li>ESP8266</li><li>RFID</li><li>Blynk</li><li>GPS Modules</li>
+          </ul>
+          <div class="progress-list">
+            <div class="progress-row"><span>Hardware Integration</span><span>86%</span></div>
+            <div class="progress-bar"><span style="width:86%"></span></div>
+          </div>
+        </article>
+        <article class="glass-card skill-card reveal-item">
+          <div class="skill-icon">04</div>
+          <h3>Tools</h3>
+          <ul class="skill-tags">
+            <li>Git</li><li>GitHub</li><li>VS Code</li><li>XAMPP</li><li>phpMyAdmin</li>
+          </ul>
+          <div class="progress-list">
+            <div class="progress-row"><span>Workflow & Delivery</span><span>92%</span></div>
+            <div class="progress-bar"><span style="width:92%"></span></div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="experience" class="section reveal">
+      <div class="container section-heading">
+        <p class="section-label">Experience</p>
+        <h2>Practical development experience from campus technology work.</h2>
+      </div>
+      <div class="container timeline">
+        <article class="timeline-card glass-card reveal-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-body">
+            <div class="timeline-head">
+              <h3>Technology Innovation Hub (TIH) – MKCE</h3>
+              <span>2025–2026</span>
+            </div>
+            <p class="role">Student Developer</p>
+            <ul class="bullet-list">
+              <li>Developed Hostel Management System</li>
+              <li>Implemented role-based access control</li>
+              <li>Built responsive dashboards</li>
+              <li>Integrated backend databases</li>
+              <li>Performed testing and debugging</li>
+            </ul>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="projects" class="section reveal">
+      <div class="container section-heading">
+        <p class="section-label">Projects</p>
+        <h2>Featured work designed for placement interviews and technical discussions.</h2>
+      </div>
+      <div class="container projects-grid">
+        <article class="glass-card project-card reveal-item">
+          <div class="project-visual project-one"></div>
+          <div class="project-content">
+            <div class="project-head">
+              <h3>Jasmine Plant Protection System</h3>
+              <span>Embedded + IoT</span>
+            </div>
+            <p>Developed an IoT-based crop protection system using UV-C sterilization and electrostatic pest control. Enabled remote monitoring and control through wireless communication.</p>
+            <div class="tech-list"><span>ESP32</span><span>Arduino Nano</span><span>Blynk</span><span>IoT</span></div>
+            <div class="project-actions">
+              <a class="btn tiny secondary" href="#contact">GitHub</a>
+              <button class="btn tiny ghost details-btn" data-project="jasmine" type="button">View Details</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="glass-card project-card reveal-item">
+          <div class="project-visual project-two"></div>
+          <div class="project-content">
+            <div class="project-head">
+              <h3>Hostel Management System</h3>
+              <span>Web App</span>
+            </div>
+            <p>Role-based hostel administration platform for room allocation, complaints, fee management, authentication, and database integration.</p>
+            <div class="tech-list"><span>PHP</span><span>MySQL</span><span>HTML</span><span>Bootstrap</span></div>
+            <div class="project-actions">
+              <a class="btn tiny secondary" href="#contact">GitHub</a>
+              <button class="btn tiny ghost details-btn" data-project="hostel" type="button">View Details</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="glass-card project-card reveal-item">
+          <div class="project-visual project-three"></div>
+          <div class="project-content">
+            <div class="project-head">
+              <h3>Blog Web Application</h3>
+              <span>Full Stack</span>
+            </div>
+            <p>Full-stack blogging platform with secure authentication, CRUD operations, and SQL injection prevention using prepared statements.</p>
+            <div class="tech-list"><span>PHP</span><span>MySQL</span><span>Bootstrap</span><span>JavaScript</span></div>
+            <div class="project-actions">
+              <a class="btn tiny secondary" href="#contact">GitHub</a>
+              <button class="btn tiny ghost details-btn" data-project="blog" type="button">View Details</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="glass-card project-card reveal-item">
+          <div class="project-visual project-four"></div>
+          <div class="project-content">
+            <div class="project-head">
+              <h3>Animal Shelter and Adoption Management System</h3>
+              <span>Web App</span>
+            </div>
+            <p>Role-based platform for managing pet registrations, adoptions, donations, and medical records.</p>
+            <div class="tech-list"><span>PHP</span><span>MySQL</span><span>Bootstrap</span></div>
+            <div class="project-actions">
+              <a class="btn tiny secondary" href="#contact">GitHub</a>
+              <button class="btn tiny ghost details-btn" data-project="animal" type="button">View Details</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="glass-card project-card reveal-item">
+          <div class="project-visual project-five"></div>
+          <div class="project-content">
+            <div class="project-head">
+              <h3>RFID Smart Classroom Key Management System</h3>
+              <span>Embedded</span>
+            </div>
+            <p>RFID-based authentication system with secure access control and real-time activity logging.</p>
+            <div class="tech-list"><span>Arduino</span><span>RFID</span><span>Embedded C</span></div>
+            <div class="project-actions">
+              <a class="btn tiny secondary" href="#contact">GitHub</a>
+              <button class="btn tiny ghost details-btn" data-project="rfid" type="button">View Details</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="glass-card project-card reveal-item">
+          <div class="project-visual project-six"></div>
+          <div class="project-content">
+            <div class="project-head">
+              <h3>Automated Fuse Damage Detection System</h3>
+              <span>IoT + Sensors</span>
+            </div>
+            <p>Transformer fault detection system with instant GPS-based maintenance alerts.</p>
+            <div class="tech-list"><span>Arduino</span><span>GPS</span><span>Sensors</span><span>IoT</span></div>
+            <div class="project-actions">
+              <a class="btn tiny secondary" href="#contact">GitHub</a>
+              <button class="btn tiny ghost details-btn" data-project="fuse" type="button">View Details</button>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="education" class="section reveal">
+      <div class="container section-heading">
+        <p class="section-label">Education</p>
+        <h2>Academic background aligned with engineering and technology roles.</h2>
+      </div>
+      <div class="container timeline education-grid">
+        <article class="timeline-card glass-card reveal-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-body">
+            <div class="timeline-head">
+              <h3>Bachelor of Engineering</h3>
+              <span>2027</span>
+            </div>
+            <p class="role">Electronics and Communication Engineering</p>
+            <p>M. Kumarasamy College of Engineering</p>
+            <p class="metric">CGPA: 8.4+</p>
+          </div>
+        </article>
+        <article class="timeline-card glass-card reveal-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-body">
+            <div class="timeline-head">
+              <h3>Higher Secondary Education</h3>
+              <span>Schooling</span>
+            </div>
+            <p class="role">Trinity Academy MHSS, Namakkal</p>
+            <p class="metric">83.33%</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="certifications" class="section reveal">
+      <div class="container section-heading">
+        <p class="section-label">Certifications</p>
+        <h2>Courses and learning milestones that strengthen technical depth.</h2>
+      </div>
+      <div class="container cert-grid">
+        <article class="glass-card cert-card reveal-item"><span>◎</span><p>Cloud Computing (NPTEL)</p></article>
+        <article class="glass-card cert-card reveal-item"><span>◎</span><p>German Language A1.1 – Inlingua Chennai</p></article>
+        <article class="glass-card cert-card reveal-item"><span>◎</span><p>HTML, CSS & JavaScript Certification</p></article>
+        <article class="glass-card cert-card reveal-item"><span>◎</span><p>SAWIT.AI Learnathon</p></article>
+        <article class="glass-card cert-card reveal-item"><span>◎</span><p>Generative AI</p></article>
+        <article class="glass-card cert-card reveal-item"><span>◎</span><p>Cyber Security Internship</p></article>
+        <article class="glass-card cert-card reveal-item"><span>◎</span><p>Network Security</p></article>
+      </div>
+    </section>
+
+    <section id="achievements" class="section reveal">
+      <div class="container section-heading">
+        <p class="section-label">Achievements</p>
+        <h2>Competitions, symposiums, and leadership moments.</h2>
+      </div>
+      <div class="container achievement-grid">
+        <article class="glass-card achievement-card reveal-item"><span>01</span><p>Finalist – Sindhanai'25 National Hackathon</p></article>
+        <article class="glass-card achievement-card reveal-item"><span>02</span><p>Project Presentation – Dakshaa'25</p></article>
+        <article class="glass-card achievement-card reveal-item"><span>03</span><p>Project Presentation – Srishi'26</p></article>
+        <article class="glass-card achievement-card reveal-item"><span>04</span><p>Coding Contest Participant – KPR Institute</p></article>
+        <article class="glass-card achievement-card reveal-item"><span>05</span><p>TCS CodeVita Participant</p></article>
+        <article class="glass-card achievement-card reveal-item"><span>06</span><p>Technology Innovation Hub Member</p></article>
+      </div>
+    </section>
+
+    <section id="github-stats" class="section reveal">
+      <div class="container section-heading">
+        <p class="section-label">GitHub Statistics</p>
+        <h2>Portfolio-style social proof for recruiter review.</h2>
+      </div>
+      <div class="container stats-grid">
+        <article class="glass-card stat-embed reveal-item">
+          <h3>Contribution Graph</h3>
+          <img src="https://ghchart.rshah.org/Shibinayaa07" alt="GitHub contribution graph for Shibinayaa07" loading="lazy" />
+        </article>
+        <article class="glass-card stat-embed reveal-item">
+          <h3>GitHub Streak</h3>
+          <img src="https://github-readme-streak-stats.herokuapp.com/?user=Shibinayaa07&theme=transparent&hide_border=true&stroke=5ddcff&ring=0ea5e9&fire=22d3ee&currStreakLabel=5ddcff" alt="GitHub streak stats for Shibinayaa07" loading="lazy" />
+        </article>
+        <article class="glass-card stat-embed reveal-item">
+          <h3>Top Languages</h3>
+          <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Shibinayaa07&layout=compact&theme=transparent&hide_border=true&title_color=8be9fd&text_color=e5eef7" alt="Top languages used by Shibinayaa07" loading="lazy" />
+        </article>
+        <article class="glass-card stat-embed reveal-item showcase-card">
+          <h3>Repository Showcase</h3>
+          <p>Highlight your best repositories here by linking them as featured projects or pinned repos.</p>
+          <a class="btn tiny secondary" href="https://github.com/Shibinayaa07?tab=repositories" target="_blank" rel="noreferrer">Open GitHub Profile</a>
+        </article>
+      </div>
+    </section>
+
+    <section id="research" class="section reveal">
+      <div class="container section-heading">
+        <p class="section-label">Research & Publications</p>
+        <h2>Research activity that supports embedded and applied engineering interests.</h2>
+      </div>
       <div class="container">
-        <h2>Featured Projects</h2>
-        <div class="projects-grid">
-          <article class="project-card" data-project="jasmine">
-            <h3>Jasmine Plant Protection System</h3>
-            <p>IoT crop protection: UV‑C sterilization, electrostatic pest control, ESP32 & Arduino, Blynk monitoring.</p>
-            <button class="btn small" data-open="jasmine">Details</button>
+        <article class="glass-card publication-card reveal-item">
+          <div class="publication-icon">⌁</div>
+          <div>
+            <h3>Microcontroller-Based Crop Defense Mechanism with Electrostatic Field and UV-C Sterilization</h3>
+            <p><strong>Conference:</strong> ICSCSS 2026</p>
+            <p><strong>Status:</strong> Accepted for Presentation</p>
+            <div class="project-actions">
+              <a class="btn tiny secondary" href="#contact">PDF Placeholder</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="contact" class="section reveal">
+      <div class="container section-heading">
+        <p class="section-label">Contact</p>
+        <h2>Open to internships, placements, research opportunities, and project collaboration.</h2>
+      </div>
+      <div class="container contact-grid">
+        <form class="glass-card contact-form reveal-item" id="contact-form">
+          <div class="form-row">
+            <label>
+              Name
+              <input type="text" name="name" autocomplete="name" required />
+            </label>
+            <label>
+              Email
+              <input type="email" name="email" autocomplete="email" required />
+            </label>
+          </div>
+          <label>
+            Subject
+            <input type="text" name="subject" required />
+          </label>
+          <label>
+            Message
+            <textarea name="message" rows="6" required></textarea>
+          </label>
+          <button class="btn primary" type="submit">Send Message</button>
+          <p class="form-note">This form opens your email client on GitHub Pages, so no backend is needed.</p>
+        </form>
+
+        <aside class="contact-panel">
+          <article class="glass-card contact-card reveal-item">
+            <h3>Contact Details</h3>
+            <ul>
+              <li><span>Email</span><a href="mailto:shibinayaas@gmail.com">shibinayaas@gmail.com</a></li>
+              <li><span>LinkedIn</span><a href="https://linkedin.com/in/shibinayaa-s-b31090290" target="_blank" rel="noreferrer">linkedin.com/in/shibinayaa-s-b31090290</a></li>
+              <li><span>GitHub</span><a href="https://github.com/Shibinayaa07" target="_blank" rel="noreferrer">github.com/Shibinayaa07</a></li>
+              <li><span>Location</span><strong>Tamil Nadu, India</strong></li>
+            </ul>
           </article>
-
-          <article class="project-card" data-project="hostel">
-            <h3>Hostel Management System</h3>
-            <p>PHP & MySQL multi‑role app with authentication, RBAC, and complaint tracking.</p>
-            <button class="btn small" data-open="hostel">Details</button>
-          </article>
-
-          <article class="project-card" data-project="rfid">
-            <h3>RFID Smart Classroom</h3>
-            <p>RFID authentication with real‑time logging and embedded firmware.</p>
-            <button class="btn small" data-open="rfid">Details</button>
-          </article>
-
-          <article class="project-card" data-project="fuse">
-            <h3>Automated Fuse Damage Detection</h3>
-            <p>Transformer monitoring with GPS alerts and IoT fault detection.</p>
-            <button class="btn small" data-open="fuse">Details</button>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section id="experience" class="section">
-      <div class="container">
-        <h2>Experience</h2>
-        <div class="timeline">
-          <div class="timeline-item">
-            <h3>Student Developer — Technology Innovation Hub (TIH), MKCE</h3>
-            <p class="muted">2025–2026</p>
-            <p>Built the Hostel Management System: backend development, DB integration, testing, and deployment support.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="education" class="section">
-      <div class="container">
-        <h2>Education</h2>
-        <p><strong>B.E. Electronics & Communication Engineering</strong> — M. Kumarasamy College of Engineering (Expected 2027). CGPA: 8.4+</p>
-      </div>
-    </section>
-
-    <section id="contact" class="section">
-      <div class="container">
-        <h2>Contact</h2>
-        <p>Email: <a href="mailto:shibinayaas@gmail.com">shibinayaas@gmail.com</a></p>
-        <p>LinkedIn: <a href="https://linkedin.com/in/shibinayaa-s-b31090290" target="_blank">linkedin.com/in/shibinayaa-s-b31090290</a></p>
-        <p>GitHub: <a href="https://github.com/Shibinayaa07" target="_blank">github.com/Shibinayaa07</a></p>
+        </aside>
       </div>
     </section>
   </main>
 
   <footer class="site-footer">
-    <div class="container">
-      <small>© 2026 Shibinayaa S — Built with care.</small>
+    <div class="container footer-inner">
+      <p>© 2026 Shibinayaa S</p>
+      <p>Built with HTML, CSS, JavaScript and GitHub Pages.</p>
     </div>
   </footer>
 
-  <div id="modal" class="modal" aria-hidden="true">
-    <div class="modal-dialog">
-      <button id="modal-close" class="modal-close" aria-label="Close">✕</button>
+  <div id="modal" class="modal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+    <div class="modal-dialog glass-card">
+      <button id="modal-close" class="modal-close" aria-label="Close dialog">✕</button>
       <div id="modal-body"></div>
     </div>
   </div>
